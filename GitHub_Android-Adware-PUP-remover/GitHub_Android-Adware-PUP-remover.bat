@@ -67,8 +67,10 @@ adb shell pm list packages | sort > %temp%\lista_ottimizzazione.txt
 for %%X in (
 
 ::Gruppo_Microsoft
+com.microsoft.office.excel
 com.microsoft.office.onenote
 com.microsoft.office.powerpoint
+com.microsoft.office.word
 com.microsoft.skydrive
 
 ::Gruppo_APP_TIM
@@ -111,6 +113,14 @@ com.buongiorno.widget.it_cinemapp
 com.buongiorno.widget.it_goldstarsecret
 com.buongiorno.widget.it_iloveshopping
 it.h3g.appbox.nerostark.com
+
+::Gruppo_APP_VODAFONE
+com.vodafone.addressbook
+com.vodafone.android.featurewidget
+com.vodafone.android.myweb.launcher
+com.vodafone.cloud
+it.vodafone.calcio
+com.vodafone.smhs
 
 ::Gruppo_CLEANER/ANTIVIRUS
 com.cleanmaster.mguard
@@ -172,6 +182,16 @@ com.starxmedia.map.compass.free
 com.whatsapp.messenger.videocall.update.status
 com.marcuselldev.updaterforwhatsapp
 com.apusapps.emo_launcher
+com.xpro.camera.lite
+com.emoticon.screen.home.launcher
+messenger.social.chat.apps
+com.fulminesoftware.batteryindicator
+com.flashlight.brightest.beacon.torch
+walking.pedometer.fit.stepcounter
+com.robincleaner.lite
+step.tracker.stepcounter.walking
+homeworkout.homeworkouts.noequipment
+
 
 ::Gruppo_APP_OBSOLETE
 com.sec.chaton
@@ -191,6 +211,7 @@ com.gameloft.android.GloftRF15
 com.gameloft.android.GloftSMIM
 com.gameloft.android.GloftJDMP
 com.gameloft.android.GloftBBPM
+com.gameloft.android.GloftAGMP
 com.mobilesrepublic.appy
 com.huawei.gamebox.global
 com.phonegap.demo
@@ -204,6 +225,12 @@ com.zentertain.videoflip
 com.Slide.Show.Maker.With.Music
 com.cyberlink.youcammakeup
 com.rhmsoft.fm.hd
+com.samsung.videohub
+com.sec.android.app.gamehub
+com.sec.readershub
+com.sec.readershub2.store
+com.sec.msc.learninghub
+com.bloomberg.bbwa
 
 ::Gruppo_TASTIERE
 com.jb.emoji.gokeyboard
@@ -217,6 +244,41 @@ com.keyboard.font.theme.emoji
 com.ikeyboard.emoji.emojione
 com.qisiemoji.inputmethod
 jellybeankeyboard.f.g
+com.huawei.inputmethod.language.spanish
+com.huawei.inputmethod.language.portuguese
+com.huawei.inputmethod.language.german
+com.huawei.inputmethod.language.french
+com.huawei.inputmethod.language.dutch
+com.cootek.smartinputv5.language.arabic
+com.cootek.smartinputv5.language.burmese
+com.cootek.smartinputv5.language.cht
+com.cootek.smartinputv5.language.czech
+com.cootek.smartinputv5.language.danish
+com.cootek.smartinputv5.language.dutch
+com.cootek.smartinputv5.language.englishus
+com.cootek.smartinputv5.language.finnish
+com.cootek.smartinputv5.language.french
+com.cootek.smartinputv5.language.german
+com.cootek.smartinputv5.language.hungarian
+com.cootek.smartinputv5.language.indonesian
+com.cootek.smartinputv5.language.korean
+com.cootek.smartinputv5.language.laotian
+com.cootek.smartinputv5.language.malayan
+com.cootek.smartinputv5.language.norwegian
+com.cootek.smartinputv5.language.persian
+com.cootek.smartinputv5.language.polish
+com.cootek.smartinputv5.language.portuguesebr
+com.cootek.smartinputv5.language.portuguesept
+com.cootek.smartinputv5.language.russian
+com.cootek.smartinputv5.language.slovak
+com.cootek.smartinputv5.language.spanish
+com.cootek.smartinputv5.language.swedish
+com.cootek.smartinputv5.language.thai
+com.cootek.smartinputv5.language.ukrainian
+com.cootek.smartinputv5.language.vietnam
+com.cootek.smartinputv5.language.zawgyi
+com.cootek.smartinputv5.skin.keyboard_theme_navy_tinge
+com.cootek.smartinputv5.skin.theme_free_ios7
 
 ) do (
 	findstr "%%X" "%temp%\lista_ottimizzazione.txt" > nul && ( 
